@@ -16,6 +16,7 @@ services:
       - "8001:8001"  # Expose port 5000 on the container to port 5002 on the host
     networks:
       - app-network
+    container_name: docker2
 
   docker3:
     build:
