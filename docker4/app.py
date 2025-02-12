@@ -13,4 +13,4 @@ def compute():
     return jsonify({"message": "Computation done", "data_size": len(replicated_data)})
 
 if __name__ == '__main__':
-    app.run(debug=True, host="0.0.0.0", port=5003)
+    app.run(debug=True, host="0.0.0.0", port=8003)
