@@ -2,7 +2,7 @@ version: '3.8'
 services:
   docker1:
     build:
-      context: ./docker1 4 # Path to docker1 folder
+      context: ./docker1 # Path to docker1 folder
     ports:
       - "8000:8000"  # Expose port 5000 on the container to port 5001 on the host
     networks:
