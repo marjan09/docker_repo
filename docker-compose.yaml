@@ -5,8 +5,7 @@ services:
       context: ./docker1 # Path to docker1 folder
     ports:
       - "8000:8000"  # Expose port 5000 on the container to port 5001 on the host
-    networks:
-      - app-network
+
     container_name: docker1
 
   docker2:
@@ -14,8 +13,7 @@ services:
       context: ./docker2  # Path to docker2 folder
     ports:
       - "8001:8001"  # Expose port 5000 on the container to port 5002 on the host
-    networks:
-      - app-network
+
     container_name: docker2
 
   docker3:
@@ -23,8 +21,7 @@ services:
       context: ./docker3  # Path to docker3 folder
     ports:
       - "8002:8002"  # Expose port 5000 on the container to port 5003 on the host
-    networks:
-      - app-network
+
     container_name: docker3
 
   docker4:
@@ -32,8 +29,6 @@ services:
       context: ./docker4  # Path to docker4 folder
     ports:
       - "8003:8003"  # Expose port 5000 on the container to port 5004 on the host
-    networks:
-      - app-network
     container_name: docker4
 
   docker5:
@@ -41,13 +36,10 @@ services:
       context: ./docker5  # Path to docker5 folder
     ports:
       - "8004:8004"  # Expose port 5000 on the container to port 5005 on the host
-    networks:
-      - app-network
+
     container_name: docker5
 
-networks:
-  app-network:
-    driver: bridge
+
 
 
 
