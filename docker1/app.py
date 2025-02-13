@@ -8,10 +8,10 @@ app = Flask(__name__)
 def start_computation():
     # Services to which the computation requests are sent
     services = [
-        'http://docker2:8001/compute',
-        'http://docker3:8002/compute',
-        'http://docker4:8003/compute',
-        'http://docker5:8004/compute'
+        'http://docker2.docker_container_namespace:8001/compute',
+        'http://docker3.docker_container_namespace:8002/compute',
+        'http://docker4.docker_container_namespace:8003/compute',
+        'http://docker5.docker_container_namespace:8004/compute'
     ]
     
 
