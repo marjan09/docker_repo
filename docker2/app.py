@@ -4,6 +4,11 @@ import time
 
 app = Flask(__name__)
 
+
+@app.route('/health', methods=['GET'])
+def health():
+    return jsonify({'status': 'ok'})
+
 @app.route('/compute', methods=['GET'])
 def compute():
     # Simulate a heavy computation task

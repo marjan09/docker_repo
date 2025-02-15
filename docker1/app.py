@@ -4,6 +4,10 @@ import requests
 
 app = Flask(__name__)
 
+@app.route('/health', methods=['GET'])
+def health():
+    return jsonify({'status': 'ok'})
+
 @app.route('/start-computation', methods=['GET'])
 def start_computation():
     # Services to which the computation requests are sent
